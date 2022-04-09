@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block head_title %}সবার ব্যাংক{% endblock %}
+
+{% block content %}
+<div class="news-ticker">
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="4" scrolldelay="30" direction="left" left="1" right="1" top="1">
+    <span><q>"আমরা সবাই সবার জন্যে।" তাই 'সবার ব্যাংক'-এর অনলাইন সাইটে আপনাকে স্বাগতম। আমাদের নতুন কর্মকেন্দ্রে আগত সবাইকে জানাই আন্তরিক শুভেচ্ছা ও অভিনন্দন।  </q> <b>রমজানুল মোবারক!!!</b></span>
+    
+    
+    
+    </marquee>
+    </div>
+    <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+        <!--Left Col-->
+        
+        <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+            <h1 align="center" class="font-bold text-gold-500 text-4xl my-4">যোগ দিন<br>জয় করতে</h1>
+
+            <div>
+            <a href="{% url 'accounts:user_registration' %}" class="bg-transparent hover:bg-green-800 text-gray-800 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">Create A New Account</a>
+            
+            </div>
+        </div>
+        <!--Right Col-->
+        <div class="w-full lg:w-1/2 lg:py-6 text-center">
+            <img src ="https://www.banglacyber.com/wp-content/uploads/2019/11/bd-heroes.jpg""/>
+            <figcaption>বিনম্র শ্রদ্ধা বীরশ্রেষ্ঠগণ</figcaption>
+        </div>
+    </div>
+{% endblock %}
