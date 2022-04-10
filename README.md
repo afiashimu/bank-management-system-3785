@@ -9,4 +9,4 @@ pip install mysqlclient
 python manage.py runserver
 
 
-database: simplebankdb
+database: mybank_database
