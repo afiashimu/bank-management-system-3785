@@ -1,4 +1,4 @@
-# my-bank
+# bank-management-system
 
 conda activate bank
 
